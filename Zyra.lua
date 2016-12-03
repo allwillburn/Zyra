@@ -152,7 +152,7 @@ OnTick(function (myHero)
 	  	      CastTargetSpell(_W, target.pos)
           end
         end
-        if Zyra Menu.URFMode.E:Value() then        
+        if ZyraMenu.URFMode.E:Value() then        
 	        if Ready(_E) and ValidTarget(target, 850) then
 						CastSkillShot(_E, target)
 	        end
