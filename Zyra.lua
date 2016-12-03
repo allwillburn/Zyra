@@ -144,7 +144,7 @@ OnTick(function (myHero)
         --URFMode
         if ZyraMenu.URFMode.Q:Value() then        
           if Ready(_Q) and ValidTarget(target, 800) then
-						CastSkillShot(_Q, target.pos)
+		      CastSkillShot(_Q, target.pos)
           end
         end 
         if ZyraMenu.URFMode.W:Value() and ValidTarget(target, 850) then        
@@ -152,9 +152,9 @@ OnTick(function (myHero)
 	  	      CastTargetSpell(_W, target.pos)
           end
         end
-        if ZyraMenu.URFMode.E:Value() then        
-	        if Ready(_E) and ValidTarget(target, 850) then
-						CastSkillShot(_E, target)
+        if ZyraMenu.URFMode.E:Value() and ValidTarget(target, 850) then        
+	        if Ready(_E) then
+		      CastSkillShot(_E, target)
 	        end
         end
                 
