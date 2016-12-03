@@ -76,7 +76,7 @@ OnTick(function (myHero)
 		     if IOW:Mode() == "Combo" then
 
              if ZyraMenu.Combo.W:Value() and Ready(_W) and ValidTarget(target, 850) then
-				          CastTargetSpell(_W, target)
+				          CastTargetSpell(target, _W)
 	     end
 			
 	     if ZyraMenu.Combo.Q:Value() and Ready(_Q) and ValidTarget(target, 800) then
