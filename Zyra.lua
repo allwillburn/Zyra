@@ -12,7 +12,7 @@ local SetDCP, SkinChanger = 0
 
 local ZyraMenu = Menu("Zyra", "Zyra")
 
-ZyraMenu:SubMenu("Zyra", "Zyra")
+ZyraMenu:SubMenu("Combo", "Combo")
 
 ZyraMenu.Combo:Boolean("Q", "Use Q in combo", true)
 ZyraMenu.Combo:Boolean("W", "Use W in combo", true)
