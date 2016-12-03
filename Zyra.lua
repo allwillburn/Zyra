@@ -53,7 +53,7 @@ OnTick(function (myHero)
 	local target = GetCurrentTarget()
 
 	--AUTO LEVEL UP
-	if ZyraMenu.URFMode.Level:Value() then
+	if ZyraMenu.URFMode.Level:Value() then 
 
 			spellorder = {_Q, _E, _W, _Q, _E, _R, _Q, _W, _W, _Q, _R, _Q, _W, _E, _E, _R, _E, _E}
 			if GetLevelPoints(myHero) > 0 then
