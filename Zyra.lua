@@ -75,20 +75,24 @@ OnTick(function (myHero)
 	--COMBO
 		     if IOW:Mode() == "Combo" then
 
-             if ZyraMenu.Combo.Q:Value() and Ready(_Q) and ValidTarget(target, 800) then
-				                           CastTargetSpell(_Q, target.pos)
+             if ZyraMenu.Combo.W:Value() and Ready(_W) and ValidTarget(target, 850) then
+				          CastTargetSpell(_W, target.pos)
+	     end
+			
+	     if ZyraMenu.Combo.Q:Value() and Ready(_Q) and ValidTarget(target, 800) then
+				         CastTargetSpell(_Q, target.pos)
              end
             	    
-	           if ZyraMenu.Combo.W:Value() and Ready(_W) and ValidTarget(target, 850) then
-				                           CastTargetSpell(_W, target.pos)
-	           end
+	     if ZyraMenu.Combo.W:Value() and Ready(_W) and ValidTarget(target, 850) then
+				          CastTargetSpell(_W, target.pos)
+	     end
              
-	           if ZyraMenu.Combo.E:Value() and Ready(_E) and ValidTarget(target, 850) then
-				                           CastSkillShot(_E, target)
-			       end
+	     if ZyraMenu.Combo.E:Value() and Ready(_E) and ValidTarget(target, 850) then
+				          CastSkillShot(_E, target)
+             end
 	    
              if ZyraMenu.Combo.R:Value() and Ready(_R) and ValidTarget(target, 500) then
-				                            CastTargetSpell(target, _R)
+				          CastTargetSpell(target, _R)
              end
 
           end
