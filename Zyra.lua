@@ -80,7 +80,7 @@ OnTick(function (myHero)
 	     end
 			
 	     if ZyraMenu.Combo.Q:Value() and Ready(_Q) and ValidTarget(target, 800) then
-				         CastTargetSpell(_Q, target.pos)
+				         CastTargetSpell(_Q, target)
              end
             	    
 	     if ZyraMenu.Combo.W:Value() and Ready(_W) and ValidTarget(target, 850) then
