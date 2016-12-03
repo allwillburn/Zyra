@@ -65,7 +65,7 @@ OnTick(function (myHero)
           if IOW:Mode() == "Harass" then
 
             if ZyraMenu.Harass.Q:Value() and Ready(_Q) and ValidTarget(target, 800) then
-	                                CastSkillShot(_Q, target.pos)
+	                                CastSkillShot(_Q, target.pos) 
                        	
              end
              if ZyraMenu.Harass.E:Value() and Ready(_E) and ValidTarget(target, 850) then
@@ -80,7 +80,7 @@ OnTick(function (myHero)
 	     end
 			
 	     if ZyraMenu.Combo.Q:Value() and Ready(_Q) and ValidTarget(target, 800) then
-				         CastTargetSpell(_Q, target.pos)
+				         CastSkillShot(_Q, target.pos) 
              end
             	    
 	     if ZyraMenu.Combo.W:Value() and Ready(_W) and ValidTarget(target, 850) then
@@ -139,7 +139,7 @@ OnTick(function (myHero)
 	        	   CastSkillShot(_Q, closeminion)
 	         end
           
-           if UrgotMenu.LaneClear.E:Value() and Ready(_E) and ValidTarget(closeminion, 900) then
+           if ZyraMenu.LaneClear.E:Value() and Ready(_E) and ValidTarget(closeminion, 900) then
 	        	   CastSkillShot(_E, closeminion)
 	         end
       	 end
