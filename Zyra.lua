@@ -152,7 +152,7 @@ OnTick(function (myHero)
         end 
         if ZyraMenu.URFMode.W:Value() and ValidTarget(target, 850) then        
           if Ready(_W) then
-	  	      CastTargetSpell(_W, target.pos)
+	  	     CastTargetSpell(_W, target)
           end
         end
         if ZyraMenu.URFMode.E:Value() and ValidTarget(target, 850) then        
